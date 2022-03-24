@@ -9,16 +9,16 @@
 		$id = trim($rowres[0]);
 		if(isset($_POST[$rowres[0]]))
 		{
-			if($rowres[6]=="等待面試中")
-				$sql_StatusChange="UPDATE Candidate SET Checkin =\"抵達五樓\" WHERE ExamID=\"".$id."\"";
+			if($rowres[6]=="抵達420")
+				$sql_StatusChange="UPDATE Candidate SET Checkin =\"開始面試\" WHERE ExamID=\"".$id."\"";
 			$result3=mysqli_query($db_link,$sql_StatusChange) or die("修改失敗");
-			echo"<script language=\"JavaScript\">alert('".$id." ".$rowres[3]." 已在考場前等候');location.href=\"status_5F.php\";</script>";
+			echo"<script language=\"JavaScript\">alert('".$id." ".$rowres[3]." 已入場面試');location.href=\"status_420.php\";</script>";
 		}
 		else if(isset($_POST[$Cid]))
 		{
-			$sql_StatusChange="UPDATE Candidate SET Checkin =\"等待面試中\" WHERE ExamID=\"".$id."\"";
+			$sql_StatusChange="UPDATE Candidate SET Checkin =\"抵達420\" WHERE ExamID=\"".$id."\"";
 			$result3=mysqli_query($db_link,$sql_StatusChange) or die("修改失敗");
-			echo"<script language=\"JavaScript\">alert('已成功修正');location.href=\"status_5F.php\";</script>";
+			echo"<script language=\"JavaScript\">alert('已成功修正');location.href=\"status_420.php\";</script>";
 		}
 	}		
 	echo"<script language=\"JavaScript\">location.href=\"index.php\";</script>";

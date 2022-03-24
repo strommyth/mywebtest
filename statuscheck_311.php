@@ -10,7 +10,7 @@
 		if(isset($_POST[$rowres[0]]))
 		{
 			if($rowres[6]=="前往311...")
-				$sql_StatusChange="UPDATE Candidate SET Checkin =\"等待面試中\" WHERE ExamID=\"".$id."\"";
+				$sql_StatusChange="UPDATE Candidate SET Checkin =\"402等待面試中\" WHERE ExamID=\"".$id."\"";
 			$result3=mysqli_query($db_link,$sql_StatusChange) or die("修改失敗");
 			echo"<script language=\"JavaScript\">alert('".$id." ".$rowres[3]." 已成功抵達311');location.href=\"status_311.php\";</script>";
 		}

@@ -17,10 +17,14 @@
 			{
 				$check="1";
 				$Group=$row[2];
+				$sql_query_name="SELECT Name FROM Candidate where ExamID='$Uname'";
+				$resultName=mysqli_query($db_link,$sql_query_name) or die("查詢失敗2");
+				$rowName=mysqli_fetch_array($resultName);
+				$wname = $rowName[0];
 				if($Group=="考生")//偷存編號
-				{
+				{	
 					$sql_query_Group="SELECT Number FROM Candidate where ExamID='$Uname'";
-					$resultGroup=mysqli_query($db_link,$sql_query_Group) or die("查詢失敗2");
+					$resultGroup=mysqli_query($db_link,$sql_query_Group) or die("查詢失敗3");
 					while($rowGroup=mysqli_fetch_array($resultGroup))
 					{
 						$GroupID=$rowGroup[0];
@@ -40,9 +44,11 @@
 			$_SESSION['Uname']=$Uname;
 			$_SESSION['Ulogin']=$Group;
 			$_SESSION['UloginID']=$GroupID;
+			$_SESSION['wname']=$wname;
 			setcookie("Uname",$Uname);
 			setcookie("Ulogin",$Group);
 			setcookie("GroupID",$GroupID);
+			setcookie("wname",$wname);
 			//跳轉到使用者首頁
 			header('refresh:0;url=index.php');
 		}

@@ -10,7 +10,29 @@
 	</head>
 	<body>
 		<!-- Header -->
-			<header id="header">
+		<header>
+		<?php
+		if (isset($_COOKIE['GroupID'])) 
+		{
+			//已經登入
+			if ($_COOKIE['GroupID']==-1) 
+			{
+				echo "<header id='header' style='background-color:white'>";
+			} 
+			else if ($_COOKIE['GroupID']%2==1) 
+			{
+				echo "<header id='header' style='background-color:#BFFFFF'>";
+			} 
+			else if ($_COOKIE['GroupID']%2==0) 
+			{
+				echo "<header id='header' style='background-color:#BFFFBF'>";
+			}
+		} 
+		else 
+		{
+			echo "<header id='header' style='background-color:white'>";
+		}
+		?>
 				<nav class="left">
 					<a href="#menu"><span>目錄</span></a>
 				</nav>
@@ -44,9 +66,9 @@
 						<li><a href="checkin.php">報到狀態(報到處使用)</a></li>
 						<li><a href="status_302.php">填答狀態(C302使用)</a></li>
 						<li><a href="status_311.php">考生狀態(C311使用)</a></li>
-						<li><a href="status_5F.php">考生狀態(五樓使用)</a></li>
-						<li><a href="status_5F_room.php">考生狀態(五樓考場外使用)</a></li>
-						<li><a href="status_506.php">考生狀態(506使用)</a></li>
+						<li><a href="status_402.php">考生狀態(C402使用)</a></li>
+						<li><a href="status_420.php">考生狀態(C420使用)</a></li>
+						<li><a href="status_403.php">考生狀態(C403使用)</a></li>
 					<?php
 						}
 					?>
@@ -79,7 +101,7 @@
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h1>110學年度個人申請面試問卷</h1>
+						<h1>111學年度個人申請面試問卷</h1>
 					</header>
 					<!-- Content -->
 						<h3 id="content">歡迎您來參加本系個人申請面試，進入面試試場前，請您先填寫以下問卷。<br>此問卷是為了解您的一些基本訊息，請您審慎填寫，確認無誤後再送出。</h3>

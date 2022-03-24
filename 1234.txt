@@ -13,15 +13,15 @@ D:.
 │  logout.php//登出
 
 │  statuscheck_311.php//改變區域的後端判定
-│  statuscheck_506.php
+│  statuscheck_403.php
 │  statuscheck_5F.php
-│  statuscheck_5F_room.php
+│  statuscheck_420.php
 
 │  status_302.php//不同區域的顯示頁面
 │  status_311.php
-│  status_506.php
+│  status_403.php
 │  status_5F.php
-│  status_5F_room.php
+│  status_420.php
 
 │  survey.php//考生答題前端
 │  surveySet.php//考生答題送出

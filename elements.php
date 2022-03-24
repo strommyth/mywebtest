@@ -50,9 +50,9 @@
 						<li><a href="checkin.php">報到狀態(報到處使用)</a></li>
 						<li><a href="status_302.php">填答狀態(C302使用)</a></li>
 						<li><a href="status_311.php">考生狀態(C311使用)</a></li>
-						<li><a href="status_5F.php">考生狀態(五樓使用)</a></li>
-						<li><a href="status_5F_room.php">考生狀態(五樓考場外使用)</a></li>
-						<li><a href="status_506.php">考生狀態(506使用)</a></li>
+						<li><a href="status_5F.php">考生狀態(420使用)</a></li>
+						<li><a href="status_420.php">考生狀態(420使用)</a></li>
+						<li><a href="status_403.php">考生狀態(403使用)</a></li>
 					<?php
 						}
 					?>
@@ -99,8 +99,7 @@
 									?>						
 									<div class="select-wrapper">
 										<select name="class"style="width:30%;float:left">
-											<option value="A"<?php if($_POST['class']=="A") echo "selected"?>>A</option>
-											<option value="B"<?php if($_POST['class']=="B") echo "selected"?>>B</option>
+											<option value="T"<?php if($_POST['class']=="T") echo "selected"?>>T</option>
 										</select>
 										<select name="time"style="width:30%;float:left">
 										
@@ -111,13 +110,27 @@
 											<option value="5"<?php if($_POST['time']=="5") echo "selected"?>>5</option>
 											<option value="6"<?php if($_POST['time']=="6") echo "selected"?>>6</option>
 											<option value="7"<?php if($_POST['time']=="7") echo "selected"?>>7</option>
+											<option value="8"<?php if($_POST['time']=="8") echo "selected"?>>8</option>
+											<option value="9"<?php if($_POST['time']=="9") echo "selected"?>>9</option>
+											<option value="10"<?php if($_POST['time']=="10") echo "selected"?>>10</option>
+											<option value="11"<?php if($_POST['time']=="11") echo "selected"?>>11</option>
 										</select>
 										<select name="round"style="width:30%;float:left">
 											<option value="1"<?php if($_POST['round']=="1") echo "selected"?>>1</option>
 											<option value="2"<?php if($_POST['round']=="2") echo "selected"?>>2</option>
 											<option value="3"<?php if($_POST['round']=="3") echo "selected"?>>3</option>
-											<option value="4"<?php if($_POST['round']=="5") echo "selected"?>>4</option>
+											<option value="4"<?php if($_POST['round']=="4") echo "selected"?>>4</option>
 											<option value="5"<?php if($_POST['round']=="5") echo "selected"?>>5</option>
+											<option value="6"<?php if($_POST['round']=="6") echo "selected"?>>6</option>
+											<option value="7"<?php if($_POST['round']=="7") echo "selected"?>>7</option>
+											<option value="8"<?php if($_POST['round']=="8") echo "selected"?>>8</option>
+											<option value="9"<?php if($_POST['round']=="9") echo "selected"?>>9</option>
+											<option value="10"<?php if($_POST['round']=="10") echo "selected"?>>10</option>
+											<option value="11"<?php if($_POST['round']=="11") echo "selected"?>>11</option>
+											<option value="12"<?php if($_POST['round']=="12") echo "selected"?>>12</option>
+											<option value="13"<?php if($_POST['round']=="13") echo "selected"?>>13</option>
+											<option value="14"<?php if($_POST['round']=="14") echo "selected"?>>14</option>
+											<option value="15"<?php if($_POST['round']=="15") echo "selected"?>>15</option>
 										</select>
 										<button class="button special small" style="float:left;width:10%;padding:0 0.3em" name="RefreshData">查詢</button>
 									</div>
@@ -147,9 +160,9 @@
 													$Color="#FFADAD";
 												else if($DATA_rowres[6]=="前往311...")
 													$Color="#FFD6A5";
-												else if($DATA_rowres[6]=="等待面試中")
+												else if($DATA_rowres[6]=="402等待面試中")
 													$Color="#FDFFB6";
-												else if($DATA_rowres[6]=="抵達五樓")
+												else if($DATA_rowres[6]=="抵達420")
 													$Color="#CAFFBF";
 												else if($DATA_rowres[6]=="開始面試")
 													$Color="#9BF6FF";

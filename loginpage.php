@@ -21,16 +21,49 @@
 		{	
 		}
 	?>
-		<!-- Header -->
-			<header id="header">
-				<nav class="left">
-					<a href="#menu"><span>目錄</span></a>
-				</nav>
-				<a href="index.php" class="logo">National Taitung University</a>
-				<nav class="right">
-					<a href="loginpage.php" class="button alt">Log in</a>
-				</nav>
-			</header>
+	<!-- Header -->
+	<header>
+		<?php
+	if (isset($_COOKIE['GroupID'])) 
+	{
+		//已經登入
+		if ($_COOKIE['GroupID']==-1) 
+		{
+			echo "<header id='header' style='background-color:white'>";
+		} 
+		else if ($_COOKIE['GroupID']%2==1) 
+		{
+			echo "<header id='header' style='background-color:#BFFFFF'>";
+		} 
+		else if ($_COOKIE['GroupID']%2==0) 
+		{
+			echo "<header id='header' style='background-color:#BFFFBF'>";
+		}
+	} 
+	else
+	{
+		echo "<header id='header' style='background-color:white'>";
+	}
+	?>
+
+		<nav class="left">
+			<a href="#menu"><span>目錄</span></a>
+		</nav>
+		<a href="index.php" class="logo">National Taitung University</a>
+		<nav class="right">
+			<?php
+	header("Content-Type:text/html;charset=utf-8");
+	session_start();
+	if (isset($_COOKIE['Uname'])) {
+		//已經登入
+		echo "<a href='logout.php' class='button alt'>Log Out</a>";
+	} else {
+		echo "<a href='loginpage.php' class='button alt'>Log in</a>";
+	}
+	?>
+
+		</nav>
+	</header>
 
 		<!-- Menu -->
 			<nav id="menu">
@@ -44,9 +77,9 @@
 						<li><a href="checkin.php">報到狀態(報到處使用)</a></li>
 						<li><a href="status_302.php">填答狀態(C302使用)</a></li>
 						<li><a href="status_311.php">考生狀態(C311使用)</a></li>
-						<li><a href="status_5F.php">考生狀態(五樓使用)</a></li>
-						<li><a href="status_5F_room.php">考生狀態(五樓考場外使用)</a></li>
-						<li><a href="status_506.php">考生狀態(506使用)</a></li>
+						<li><a href="status_5F.php">考生狀態(420使用)</a></li>
+						<li><a href="status_420.php">考生狀態(420使用)</a></li>
+						<li><a href="status_403.php">考生狀態(403使用)</a></li>
 					<?php
 						}
 					?>

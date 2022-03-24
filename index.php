@@ -10,7 +10,29 @@
 	<body>
 
 		<!-- Header -->
-			<header id="header">
+		<header>
+		<?php
+		if(isset($_COOKIE['GroupID']))
+		{
+		//已經登入
+			if($_COOKIE['GroupID']==-1)
+			{
+				echo "<header id='header' style='background-color:white'>";
+			}
+			else if($_COOKIE['GroupID']%2==1)
+			{
+				echo "<header id='header' style='background-color:#BFFFFF'>";
+			}
+			else if ($_COOKIE['GroupID']%2==0) {
+				echo "<header id='header' style='background-color:#BFFFBF'>";
+			}
+		}
+		else
+			{
+				echo "<header id='header' style='background-color:white'>";
+			}
+		?>
+			
 				<nav class="left">
 					<a href="#menu"><span>目錄</span></a>
 				</nav>
@@ -19,6 +41,7 @@
 					<?php
 						header("Content-Type:text/html;charset=utf-8");
 						session_start();
+						$username = $_SESSION['Uname'];
 						if(isset($_COOKIE['Uname']))
 						{
 							//已經登入
@@ -45,9 +68,9 @@
 						<li><a href="checkin.php">報到狀態(報到處使用)</a></li>
 						<li><a href="status_302.php">填答狀態(C302使用)</a></li>
 						<li><a href="status_311.php">考生狀態(C311使用)</a></li>
-						<li><a href="status_5F.php">考生狀態(五樓使用)</a></li>
-						<li><a href="status_5F_room.php">考生狀態(五樓考場外使用)</a></li>
-						<li><a href="status_506.php">考生狀態(506使用)</a></li>
+						<li><a href="status_402.php">考生狀態(C402使用)</a></li>
+						<li><a href="status_420.php">考生狀態(C420使用)</a></li>
+						<li><a href="status_403.php">考生狀態(C403使用)</a></li>
 					<?php
 						}
 					?>
@@ -78,26 +101,26 @@
 					?>
 					
 					<?php
-					if ($_COOKIE['Ulogin']=='class3') {
+					if ($_COOKIE['Ulogin']=='class5') {
 					?>
-					<li><a href="status_506.php">考生狀態(506使用)</a></li>
+					<li><a href="status_403.php">考生狀態(403使用)</a></li>
 					<?php
 				}
 					?>
 					
+					
+					<?php
+					if ($_COOKIE['Ulogin']=='class3') {
+					?>
+					<li><a href="status_402.php">考生狀態(402使用)</a></li>
+					<?php
+				}
+					?>
 					
 					<?php
 					if ($_COOKIE['Ulogin']=='class4') {
 					?>
-					<li><a href="status_5F.php">考生狀態(五樓使用)</a></li>
-					<?php
-				}
-					?>
-					
-					<?php
-					if ($_COOKIE['Ulogin']=='class5') {
-					?>
-					<li><a href="status_5F_room.php">考生狀態(五樓考場外使用)</a></li>
+					<li><a href="status_420.php">考生狀態(420使用)</a></li>
 					<?php
 				}
 					?>
@@ -132,7 +155,20 @@
 		<!-- Banner -->
 			<section id="banner">
 				<div class="content">
-					<h1>國立臺東大學資訊工程學系歡迎您</h1>
+				
+				<div style="margin-right: 45%;">
+				<?php
+				echo $_SESSION['Uname'];
+				?>
+				</div>
+				
+				<h1>
+				
+				<?php
+				echo $_SESSION['wname'];
+				?>
+					國立臺東大學資訊工程學系歡迎您</h1>
+					
 					<p>請先登入系統並作答以利面試順利進行，謝謝</p>
 					<ul class="actions">
 						<li><a href="survey.php" class="button scrolly">Get Started</a></li>
@@ -159,7 +195,7 @@
 					<div class="flex-item right">
 						<div>
 							<h3>面試流程3</h3>
-							<p>到五樓開始面試，結束後至506填寫回饋</p>
+							<p>到420開始面試，結束後至403填寫回饋</p>
 						</div>
 						<div>
 							<h3>NTTU-CSIE</h3>

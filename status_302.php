@@ -49,9 +49,9 @@
 						<li><a href="checkin.php">報到狀態(報到處使用)</a></li>
 						<li><a href="status_302.php">填答狀態(C302使用)</a></li>
 						<li><a href="status_311.php">考生狀態(C311使用)</a></li>
-						<li><a href="status_5F.php">考生狀態(五樓使用)</a></li>
-						<li><a href="status_5F_room.php">考生狀態(五樓考場外使用)</a></li>
-						<li><a href="status_506.php">考生狀態(506使用)</a></li>
+						<li><a href="status_402.php">考生狀態(C402使用)</a></li>
+						<li><a href="status_420.php">考生狀態(C420使用)</a></li>
+						<li><a href="status_403.php">考生狀態(C403使用)</a></li>
 					<?php
 						}
 					?>
@@ -102,11 +102,11 @@
 					<font style="background:#F0EFEB">他還沒來</font>
 					(三樓電梯報到)-><font style="background:#FFADAD">302填寫中</font>
 					(填寫後自動偵測)-><font style="background:#FFD6A5">前往311...</font>
-					(抵達311)-><font style="background:#FDFFB6">等待面試中</font>
-					(時間到請至五樓)<br>-><font style="background:#CAFFBF">抵達五樓</font>
+					(抵達311)-><font style="background:#FDFFB6">402等待面試中</font>
+					(時間到請至420)<br>-><font style="background:#CAFFBF">抵達420</font>
 					(進入考場面試)-><font style="background:#9BF6FF">開始面試</font>
 					(面試完畢後)-><font style="background:#A0C4FF">回饋填寫中</font>
-					(506填寫回饋並領取紀念品)-><font style="background:#FFC6FF">面試完畢</font>
+					(403填寫回饋並領取紀念品)-><font style="background:#FFC6FF">面試完畢</font>
 					</h3>
 					<hr>
 						<div class="12u">
@@ -140,9 +140,9 @@
 													$Color="#FFADAD";
 												else if($A_rowres[6]=="前往311...")
 													$Color="#FFD6A5";
-												else if($A_rowres[6]=="等待面試中")
+												else if($A_rowres[6]=="402等待面試中")
 													$Color="#FDFFB6";
-												else if($A_rowres[6]=="抵達五樓")
+												else if($A_rowres[6]=="抵達420")
 													$Color="#CAFFBF";
 												else if($A_rowres[6]=="開始面試")
 													$Color="#9BF6FF";
@@ -156,7 +156,7 @@
 												<tr>
 													<td style="background-color:<?php echo $Color?>"><?php echo $A_rowres[0]?></td>
 													<td style="background-color:<?php echo $Color?>"><?php echo $A_rowres[1]?></td>
-														<td style="background-color:<?php echo $Color?>"><?php echo "A-".$A_rowres[4]."-".$A_rowres[7]."(".$A_rowres[5].")"?></td>
+														<td style="background-color:<?php echo $Color?>"><?php echo $A_rowres[4]."-".$A_rowres[7]."(".$A_rowres[5].")"?></td>
 													<td style="background-color:<?php echo $Color?>"><?php echo $A_rowres[6]?></td>
 													<td style="background-color:<?php echo $Color?>"> </td>
 												<?php 
@@ -166,9 +166,9 @@
 															$Color="#FFADAD";
 														else if($B_rowres[6]=="前往311...")
 															$Color="#FFD6A5";
-														else if($B_rowres[6]=="等待面試中")
+														else if($B_rowres[6]=="402等待面試中")
 															$Color="#FDFFB6";
-														else if($B_rowres[6]=="抵達五樓")
+														else if($B_rowres[6]=="抵達420")
 															$Color="#CAFFBF";
 														else if($B_rowres[6]=="開始面試")
 															$Color="#9BF6FF";
@@ -181,7 +181,7 @@
 												?>
 														<td style="background-color:<?php echo $Color?>"><?php echo $B_rowres[0]?></td>
 														<td style="background-color:<?php echo $Color?>"><?php echo $B_rowres[1]?></td>
-														<td style="background-color:<?php echo $Color?>"><?php echo "B-".$B_rowres[4]."-".$B_rowres[7]."(".$B_rowres[5].")"?></td>
+														<td style="background-color:<?php echo $Color?>"><?php echo $B_rowres[4]."-".$B_rowres[7]."(".$B_rowres[5].")"?></td>
 														<td style="background-color:<?php echo $Color?>"><?php echo $B_rowres[6]?></td>
 													<td style="background-color:<?php echo $Color?>"> </td>
 														<?php 	
@@ -207,9 +207,9 @@
 															$Color="#FFADAD";
 														else if($B_rowres[6]=="前往311...")
 															$Color="#FFD6A5";
-														else if($B_rowres[6]=="等待面試中")
+														else if($B_rowres[6]=="402等待面試中")
 															$Color="#FDFFB6";
-														else if($B_rowres[6]=="抵達五樓")
+														else if($B_rowres[6]=="抵達420")
 															$Color="#CAFFBF";
 														else if($B_rowres[6]=="開始面試")
 															$Color="#9BF6FF";
@@ -228,7 +228,7 @@
 													<td style="background-color:#D0D0D0"></td>
 													<td style="background-color:<?php echo $Color?>"><?php echo $B_rowres[0]?></td>
 													<td style="background-color:<?php echo $Color?>"><?php echo $B_rowres[1]?></td>
-														<td style="background-color:<?php echo $Color?>"><?php echo "B-".$B_rowres[4]."-".$B_rowres[7]."(".$B_rowres[5].")"?></td>
+														<td style="background-color:<?php echo $Color?>"><?php echo $B_rowres[4]."-".$B_rowres[7]."(".$B_rowres[5].")"?></td>
 													<td style="background-color:<?php echo $Color?>"><?php echo $B_rowres[6]?></td>
 													<td style="background-color:<?php echo $Color?>"> </td>
 
