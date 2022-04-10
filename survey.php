@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
+	
+	
 		<!-- Header -->
 		<header>
 		<?php
@@ -246,7 +248,7 @@
 											?>
 													<div class="12u$">
 														<ul class="actions">
-															<li><input type="submit" value="確認提交" name="SetAns" /></li>
+															<li><input type="submit" value="確認提交" name="SetAns" id="submit-btn"/></li>
 														</ul>
 													</div>
 											<?php
@@ -269,7 +271,27 @@
 
 				</div>
 			</section>
-
+			
+			<?php
+			if ($Ac1=="0"&&$_COOKIE['Ulogin']=="考生") {
+			?>
+			<div class="containerr">
+				<h2> 繳交倒數 </h2>
+				<h4 id="count">---</h4>
+			</div>
+			
+			
+			<?php
+				}
+			else  {
+			?>
+			<div class="containerr">
+				<h2> 已完成作答 </h2>
+			</div>
+			<?php
+				}
+			?>
+			
 				<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
@@ -281,7 +303,7 @@
 					</ul>
 				</div>
 				<div class="copyright">
-					&copy; Untitled. Design 資工四甲10611128劉紀佑</a>
+					&copy; Untitled. Design 資工四甲10611128劉紀佑
 				</div>
 			</footer>
 
@@ -291,6 +313,7 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/timecounter.js"></script>
 
 	</body>
 </html>

@@ -3229,3 +3229,22 @@
 			-webkit-transform: scale(1); /* Safari 3-8 */
 			transform: scale(1);
 		}
+		
+		
+		@font-face{
+			font-family: sevenSegment;
+			src: url(SevenSegment.ttf);
+		}
+
+		h4{
+			font-family: sevenSegment;
+			font-size: 2em;
+			color: #ff0000;
+		}
+
+		.containerr{
+			position: fixed;
+			left: 91%;
+			bottom: 2%;
+			transform: translate(-50%, -50%);
+		}

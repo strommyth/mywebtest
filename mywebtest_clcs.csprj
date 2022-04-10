@@ -1,7 +1,7 @@
 
 <codestructure version="1.11.1">
 <phptree>
-<treenode node="conn_mysql.php;PHP:PHP Include;C:\xampp\mywebsite\logincheck.php;f11;5;25;5;;C:\xampp\mywebtest\statuscheck_403.php;f10;2;24;2;;C:\xampp\mywebtest\statuscheck_402.php;f10;2;24;2;;C:\xampp\mywebtest\statuscheck_420.php;f10;2;24;2;;C:\xampp\mywebtest\status_403.php;f12;11;26;11;;C:\xampp\mywebtest\status_402.php;f12;11;26;11;;C:\xampp\mywebtest\status_420.php;f12;11;26;11;;C:\xampp\mywebtest\changecheckin.php;f10;2;24;2;;C:\xampp\mywebtest\status_302.php;f12;11;26;11;;C:\xampp\mywebtest\survey.php;f19;115;33;115;;C:\xampp\mywebtest\statuscheck_311.php;f10;2;24;2;;C:\xampp\mywebtest\surveySet.php;f10;2;24;2;;C:\xampp\mywebtest\status_311.php;f12;11;26;11;;C:\xampp\mywebtest\export.php;f11;8;25;8;;C:\xampp\mywebtest\elementssent.php;f11;2;25;2;;C:\xampp\mywebtest\elements.php;f12;12;26;12;;C:\xampp\mywebtest\logincheck.php;f11;6;25;6;;C:\xampp\mywebtest\checkin.php;f12;11;26;11;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
+<treenode node="conn_mysql.php;PHP:PHP Include;C:\xampp\mywebsite\logincheck.php;f11;5;25;5;;C:\xampp\mywebtest\changecheckin.php;f10;2;24;2;;C:\xampp\mywebtest\status_302.php;f12;11;26;11;;C:\xampp\mywebtest\survey.php;f19;117;33;117;;C:\xampp\mywebtest\statuscheck_403.php;f10;2;24;2;;C:\xampp\mywebtest\statuscheck_402.php;f10;2;24;2;;C:\xampp\mywebtest\statuscheck_420.php;f10;2;24;2;;C:\xampp\mywebtest\statuscheck_311.php;f10;2;24;2;;C:\xampp\mywebtest\surveySet.php;f10;2;24;2;;C:\xampp\mywebtest\status_311.php;f12;11;26;11;;C:\xampp\mywebtest\status_403.php;f12;11;26;11;;C:\xampp\mywebtest\export.php;f11;8;25;8;;C:\xampp\mywebtest\elementssent.php;f11;2;25;2;;C:\xampp\mywebtest\elements.php;f12;12;26;12;;C:\xampp\mywebtest\status_402.php;f12;11;26;11;;C:\xampp\mywebtest\logincheck.php;f11;6;25;6;;C:\xampp\mywebtest\checkin.php;f12;11;26;11;;C:\xampp\mywebtest\status_420.php;f12;11;26;11;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
 </phptree>
 <jstree>
@@ -2933,11 +2933,11 @@
 </treenode>
 <treenode node="a;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.scrolly.min.js;f341;1;342;1;;;;vposjQuery.extend;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
-<treenode node="b;JS:JS Var Name;C:\xampp\mywebtest\assets\js\util.js;f3;10;4;10;;C:\xampp\mywebtest\assets\js\jquery.min.js;f12;1;13;1;;;;vposa;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
-<treenode node="prevObject;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.min.js;f764;1;774;1;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
+<treenode node="b;JS:JS Var Name;C:\xampp\mywebtest\assets\js\util.js;f3;10;4;10;;C:\xampp\mywebtest\assets\js\jquery.min.js;f12;1;13;1;;;;vposArray;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
+<treenode node="prevObject;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.min.js;f764;1;774;1;;C:\xampp\mywebtest\assets\js\jquery.min.js;f764;1;774;1;;C:\xampp\mywebtest\assets\js\jquery.min.js;f764;1;774;1;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
 </treenode>
-<treenode node="c;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.scrolly.min.js;f347;1;348;1;;C:\xampp\mywebtest\assets\js\jquery.min.js;f269;1;270;1;;;;vposArray;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
+<treenode node="c;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.scrolly.min.js;f347;1;348;1;;C:\xampp\mywebtest\assets\js\jquery.min.js;f269;1;270;1;;;;vpose;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
 <treenode node="condition;JS:JS Var Name;C:\xampp\mywebtest\assets\js\util.js;f36;525;45;525;;;;vpos;;v;;a;;r&#10;&lt;b&gt;Description&lt;/b&gt;&#10;    Moves elements to/from the first positions of their respective parents.&#10;&#10;&lt;b&gt;Parameters:&lt;/b&gt;&#10;    jQuery &lt;b&gt;$elements&lt;/b&gt;: Elements (or selector) to move.&#10;    bool &lt;b&gt;condition&lt;/b&gt;: If true, moves elements to the top. Otherwise, moves elements back to their original locations.;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
@@ -2949,9 +2949,11 @@
 </treenode>
 <treenode node="count;JS:JS Var Name;C:\xampp\mywebtest\status_302.php;f5;267;10;267;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
+<treenode node="counter;JS:JS Var Name;C:\xampp\mywebtest\assets\js\timecounter.js;f5;3;12;3;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
+</treenode>
 <treenode node="d;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.min.js;f274;1;275;1;;;;vposb;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
-<treenode node="e;JS:JS Var Name;C:\xampp\mywebtest\assets\js\skel.min.js;f8893;1;8894;1;;C:\xampp\mywebtest\assets\js\jquery.min.js;f284;1;285;1;;;;vposa.length;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
+<treenode node="e;JS:JS Var Name;C:\xampp\mywebtest\assets\js\skel.min.js;f8893;1;8894;1;;C:\xampp\mywebtest\assets\js\jquery.min.js;f284;1;285;1;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
 <treenode node="each;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.min.js;f806;1;810;1;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
@@ -2959,7 +2961,7 @@
 </treenode>
 <treenode node="eq;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.min.js;f1075;1;1077;1;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
-<treenode node="f;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.scrolly.min.js;f343;1;344;1;;C:\xampp\mywebtest\assets\js\jquery.min.js;f295;1;296;1;;;;vposa.;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
+<treenode node="f;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.scrolly.min.js;f343;1;344;1;;C:\xampp\mywebtest\assets\js\jquery.min.js;f295;1;296;1;;;;vposc.attr;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
 <treenode node="first;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.min.js;f1003;1;1008;1;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
@@ -2967,7 +2969,7 @@
 </treenode>
 <treenode node="h;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.min.js;f316;1;320;1;;;;vposr;;v;;a;;r;;d318,1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
-<treenode node="i;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.scrolly.min.js;f269;1;270;1;;C:\xampp\mywebtest\assets\js\util.js;f13;50;14;50;;C:\xampp\mywebtest\assets\js\jquery.min.js;f321;1;322;1;;;;vposh.toString;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
+<treenode node="i;JS:JS Var Name;C:\xampp\mywebtest\assets\js\util.js;f13;50;14;50;;C:\xampp\mywebtest\assets\js\jquery.scrolly.min.js;f269;1;270;1;;C:\xampp\mywebtest\assets\js\jquery.min.js;f321;1;322;1;;;;vposString;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
 <treenode node="id;JS:JS Var Name;C:\xampp\mywebtest\assets\js\util.js;f4;61;6;61;;;;vpos$this.attr;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
@@ -2977,7 +2979,7 @@
 </treenode>
 <treenode node="key;JS:JS Var Name;C:\xampp\mywebtest\assets\js\util.js;f6;527;9;527;;;;vposString;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
-<treenode node="l;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.scrolly.min.js;f345;1;346;1;;C:\xampp\mywebtest\assets\js\jquery.min.js;f358;1;359;1;;;;vposString;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
+<treenode node="l;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.scrolly.min.js;f345;1;346;1;;C:\xampp\mywebtest\assets\js\jquery.min.js;f358;1;359;1;;;;vposu;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
 <treenode node="last;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.min.js;f1039;1;1043;1;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
@@ -2985,9 +2987,11 @@
 </treenode>
 <treenode node="map;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.min.js;f850;1;853;1;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
+<treenode node="mydate;JS:JS Var Name;C:\xampp\mywebtest\assets\js\timecounter.js;f4;1;10;1;;;;vposDate;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
+</treenode>
 <treenode node="n;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.scrolly.min.js;f254;1;255;1;;C:\xampp\mywebtest\assets\js\jquery.min.js;f412;1;413;1;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
-<treenode node="o;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.scrolly.min.js;f298;1;299;1;;C:\xampp\mywebtest\assets\js\jquery.min.js;f451;1;452;1;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
+<treenode node="o;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.scrolly.min.js;f298;1;299;1;;C:\xampp\mywebtest\assets\js\jquery.min.js;f451;1;452;1;;;;vpose;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
 <treenode node="p;JS:JS Var Name;C:\xampp\mywebtest\assets\js\jquery.min.js;f461;1;462;1;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e0;;i0;;o;;k;;l">
 </treenode>
